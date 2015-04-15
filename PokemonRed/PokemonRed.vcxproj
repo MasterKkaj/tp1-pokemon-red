@@ -82,6 +82,7 @@
     <ClCompile Include="Opponent.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PokemonRed.cpp" />
+    <ClCompile Include="SceneBG.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Trainer.cpp" />
   </ItemGroup>
@@ -94,6 +95,7 @@
     <ClInclude Include="Opponent.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PokemonRed.h" />
+    <ClInclude Include="SceneBG.h" />
     <ClInclude Include="Trainer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

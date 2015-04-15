@@ -3,7 +3,7 @@
 
 int main(int argc, char* args[])
 {	
-	// Proportional resolution for NES (default: 256 * 240) (only to show it's working, default "Init()" has the same size as before (800 * 600))
+	// Init with custom resolution. Proportional resolution for NES (default: 256 * 240 or 800 x 750)
 	Engine::GetInstance()->Init(160, 144); 
 	
 	PokemonRed* game = new PokemonRed();

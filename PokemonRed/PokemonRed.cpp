@@ -2,6 +2,7 @@
 
 PokemonRed::PokemonRed()
 {
+
 	player = new Player();
 	opponent = new Opponent();
 }
