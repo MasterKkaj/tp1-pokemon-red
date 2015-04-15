@@ -79,12 +79,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Opponent.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PokemonRed.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Trainer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\bart-sdl-engine-h15\src\Core\Core.vcxproj">
       <Project>{cacb57eb-0de4-4e3f-b855-1cebd28a0c4f}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Opponent.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PokemonRed.h" />
+    <ClInclude Include="Trainer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
