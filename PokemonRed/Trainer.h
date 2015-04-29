@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Sprite.h"
+#include "Common.h"
 
 class Trainer :
 	public Sprite

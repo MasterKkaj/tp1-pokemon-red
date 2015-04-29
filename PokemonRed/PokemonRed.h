@@ -1,19 +1,15 @@
 #pragma once
 
+#include "Common.h"
 #include "Player.h"
 #include "Opponent.h"
 #include "SceneBG.h"
+#include "SDL_Keycode.h"
 
 class PokemonRed: Component
 
 {
 public:
-	enum Battle_State {
-		MAIN_MENU,
-		ATTACK_MENU,
-		POKEMON_MENU,
-		ITEM_MENU
-	};
 
 	PokemonRed();
 	~PokemonRed();
@@ -24,7 +20,6 @@ public:
 	void Kill() { delete this; }
 
 private:
-	Battle_State battleState;
 	SceneBG* battleBG;
 	Player* player;
 	Opponent* opponent;

@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Opponent.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PokemonRed.cpp" />
@@ -92,6 +93,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Opponent.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PokemonRed.h" />

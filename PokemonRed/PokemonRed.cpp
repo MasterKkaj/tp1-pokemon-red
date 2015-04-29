@@ -1,10 +1,9 @@
 #include "PokemonRed.h"
-#include "SDL_Keycode.h"
 
 PokemonRed::PokemonRed()
 {
-	battleState = MAIN_MENU;
 	battleBG = new SceneBG();
+	battleBG->CreateMenu();
 	player = new Player();
 	opponent = new Opponent();
 }
@@ -17,21 +16,19 @@ PokemonRed::~PokemonRed()
 }
 
 void PokemonRed::Update() {
-	switch (battleState) {
-	case (MAIN_MENU) : {
-		break;
-		}
-
-	case (ATTACK_MENU) : {
-		break;
-		}
-
-	case (POKEMON_MENU) : {
-		break;
-		}
-
-	case (ITEM_MENU) : {
-		break;
-		}
+	if (ThisKeyPressed(SDL_SCANCODE_A)) {
+		battleBG->ShowMenu(SceneBG::MAIN_MENU);
+	}
+	if (ThisKeyPressed(SDL_SCANCODE_LEFT)) {
+		battleBG->SetCursor(Menu::DIR_LEFT);
+	}
+	else if (ThisKeyPressed(SDL_SCANCODE_RIGHT)) {
+		battleBG->SetCursor(Menu::DIR_RIGHT);
+	}
+	else if (ThisKeyPressed(SDL_SCANCODE_UP)) {
+		battleBG->SetCursor(Menu::DIR_UP);
+	}
+	else if (ThisKeyPressed(SDL_SCANCODE_DOWN)) {
+		battleBG->SetCursor(Menu::DIR_DOWN);
 	}
 }
